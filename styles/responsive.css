@@ -1,0 +1,91 @@
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        justify-content: center;
+    }
+    .logo{
+        align-items: center;
+        text-align: center;
+        padding-left: 70px;
+    }
+    .top-section{
+        display: block;
+        flex-direction: column;
+    }
+    .start-fonts{
+        font-size: 28px;
+        font-weight: 700;
+       
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 329px;
+        justify-items: center;
+        
+    }
+    .logo-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .p-btn{
+        margin-left: 70%;
+    }
+    .start .btn{
+        margin-top: 400px;
+        margin-left: 70px;
+    }
+    .camera{
+        background-image: none;
+        background-repeat: no-repeat;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .logo-section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.extra-part{
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+.extra-part img{
+    align-items: center;
+    margin-left: 40px;
+}
+footer{
+    padding: 0px;
+    width: 583px;
+    height: 211px;
+    align-items: center;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    justify-content: center;
+    justify-content: flex-start;
+
+}
+
+}
+
+/* Tablate Decices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{width: 100%;}
+    .top-section{
+        display: block;
+        flex-direction: column;
+    }
+    .logo-section{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .p-btn{
+        margin-left: 80%;
+    }
+}
+
