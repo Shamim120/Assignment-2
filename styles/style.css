@@ -1,0 +1,263 @@
+/*---------
+--- font ---
+------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/*-------------
+--- Comon Style ---
+--------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    background-color: #FFFFFF;
+    align-items: center;
+    width: 100%;
+}
+header{
+    position: relative;
+    top: 0;
+    margin-left: 8%;
+    margin-top: 2%;
+    align-items: center;
+}
+ header .logo{
+    position: relative;
+    color: #3A3A3A;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 36px;
+    font-feature-settings: 'liga' off;
+}
+
+/*-------------
+--- Top Section ---
+-------------------*/
+
+.top-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 8%;
+}
+
+.half-width{
+    width: 50%;
+}
+.start h1{
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+}
+.start p{
+    color: #3A3A3A;
+
+}
+.start .btn{
+    text-decoration: none;
+    position: absolute;
+    align-items: flex-start;
+    padding: 7px 15px;
+    border-radius: 41px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.camera{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+.camera img{
+    padding-left: 55px;
+    padding-right: 0%;
+}
+.camera:hover #main{
+    transform: scale(1.2) rotate(30deg);
+    overflow: hidden;
+    transition: transform 2s ease-in;
+}
+
+/* ---------
+Logo section 
+------------*/
+.logo-section{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+/*-------------
+ Popular Section 
+ --------------*/
+ .popular{
+     margin-top: 100px;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-bottom: 70px;
+ }
+ .popular-title{
+     font-size: 28px;
+     color: #3A3A3A;
+     text-align: center;
+ }
+ .p-btn{
+     text-decoration: none;
+     color: #E02C6DDE;
+     margin-left: 90%;
+     margin-top: 40px;
+ }
+ .products{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 25px;
+     margin-bottom: 40px;
+ }
+
+ .product{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+ }
+ .product img{
+     width: 90%;
+    padding-left: 17px;
+    padding-top: 17px;
+
+ }
+ .product-info{
+     padding: 20px;
+ }
+ .product-title h3{
+     color: #18191F;
+     font-size: 28px;
+ }
+ .product-price{
+     font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+ }
+ .fa-star{
+    font-size: 16px;
+}
+.fa-star.full{
+    color: #FFC014;
+ }
+ .fa-star.empty{
+    color: #AEAEAE;
+ }
+ .product-rating span{
+     font-size: 16px;
+     color: #18191F;
+ }
+ .product-ditals p{
+     font-size: 16px;
+     color: #18191F;
+ }
+ /* extra part  */
+ .extra-part{
+     width: 1110px;
+     height: 270px;
+     display: flex;
+     width: 75%;
+     margin-left: 165px;
+    
+ }
+ .extra-part img{
+    width: 404px;
+    height: 210px;
+    border-radius: 10px;
+ }
+ .extra-text{
+     padding-left: 88px;
+     
+ }
+ .featured{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+ }
+ .last-button{
+     width: 155px;
+     height: 45px;
+     background-color: #E02C6D;
+     border: none;
+    
+ }
+ .last-button>a{
+     color: #FFFFFF;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 16px;
+ }
+ #arow{
+     padding-left: 10px;
+     color: #FFFFFF;
+ }
+ 
+ /*---------------
+  Footer Section
+  -------------- */
+ footer{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    height: 170px;
+    width: 100%;
+    background-color: #0A0826;
+    color: #FFFFFF;
+ }
+ footer h3{
+     color: #FFFFFF;
+     font-size: 24px;
+     font-family: 'Poppins', sans-serif;
+
+ }
+ footer p{
+     font-size: 14px;
+     color: #D9DBE1;
+ }
+ .social-icon{
+     font-size: 14px;
+     text-align: center;
+ }
+ .social-icon a{
+     color: #FFFFFF;
+     padding: 5px;
+ }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+
+/* response */
+ /*----------
+ Media Queries
+ -----------*/
+
+ /* Mobile Devices */
+ @media only screen and (max-width:688px){
+    .container{
+        width: 50%;
+    }
+    .top-section{
+        display: inline;
+        flex-direction: column;
+
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .logo-section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .p-btn{
+        margin-left: 70%;
+    }
+}
+       
+
