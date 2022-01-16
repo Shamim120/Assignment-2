@@ -71,10 +71,21 @@ footer{
 
 /* Tablate Decices */
 @media only screen and (min-width:688px) and (max-width:992px){
-    .container{width: 100%;}
+    .container{width: 100%;
+    }
     .top-section{
         display: block;
         flex-direction: column;
+    }
+    .logo{
+        align-items: center;
+        text-align: center;
+        padding-left: 200px;
+        font-size: 80px;
+    }
+    .start .btn{
+        margin-top: 410px;
+        margin-left: 200px;
     }
     .logo-section{
         grid-template-columns: repeat(2, 1fr);
@@ -87,5 +98,34 @@ footer{
     .p-btn{
         margin-left: 80%;
     }
+
+    
+    .extra-part{
+        display: inline;
+        align-items: center;
+        text-align: center;
+    }
+    .extra-part img{
+        align-items: center;
+        margin-left: 40px;
+    }
+    footer{
+        padding: 0px;
+        width: 780px;
+        height: 211px;
+        align-items: center;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 20px;
+        justify-content: center;
+        justify-content: flex-start;
+    
+    }
+    footer h3{
+        color: #FFFFFF;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 15px;
+    
 }
 
